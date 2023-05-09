@@ -2,7 +2,7 @@
  * @Description:
  * @Author: Ran junlin
  * @Date: 2023-04-29 13:09:01
- * @LastEditTime: 2023-04-29 18:45:04
+ * @LastEditTime: 2023-05-04 15:45:01
  * @LastEditors: Ran junlin
  */
 import React, { useContext } from 'react';
@@ -10,9 +10,10 @@ import classNames from 'classnames';
 import { MenuContext } from './Menu';
 
 export interface MenuItemProps {
-  index: number;
+  index?: string;
   disabled?: boolean;
   className?: string;
+  name: string | number;
   style?: React.CSSProperties;
   children?: any;
 }
@@ -32,9 +33,8 @@ const MenuItem: React.FC<MenuItemProps> = ({
   });
 
   const handleClick = () => {
-    console.log(index);
-    if (context.onSelected && !disabled) {
-      context.onSelected(index);
+    if (context.onSelected && !disabled && typeof index === 'string') {
+      context.onSelected(index, rest.name);
     }
   };
 
@@ -44,5 +44,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
     </li>
   );
 };
+
+MenuItem.displayName = 'MenuItem';
 
 export default MenuItem;

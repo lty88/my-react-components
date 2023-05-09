@@ -1,0 +1,13 @@
+@each $itemKey,$itemValue in $theme-colors {
+  .icon-#{$itemKey}{
+    color: $itemValue;
+  }
+}
+
+$theme-a: ( "primary":#0d6efd,"secondary":#6610f2,"success":#d63340);
+@each $key,$value in $theme-a  {
+  .cs-#{$key}{
+    color: $value;
+  }
+}
+
