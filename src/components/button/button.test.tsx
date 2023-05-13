@@ -7,7 +7,7 @@
  */
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Button, { ButtonProps, ButtonType, ButtonSize } from './index';
+import Button, { ButtonProps, EButtonType, ButtonSize } from './index';
 
 
 const defaultProps = {
@@ -15,8 +15,8 @@ const defaultProps = {
 };
 
 const testProps: ButtonProps = {
-  btnType: ButtonType.Default,
-  size: ButtonSize.large,
+  btnType: EButtonType.Default,
+  size: ButtonSize.Large,
   className: 'klass',
 };
 
@@ -43,7 +43,7 @@ describe('test Button component', () => {
   });
   it('should render a link when btnType equals link and href is provided', () => {
     const wrapper = render(
-      <Button btnType={ButtonType.Link} href="http://dummyurl">
+      <Button btnType={EButtonType.Link} href="http://dummyurl">
         Link
       </Button>
     );

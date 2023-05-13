@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @Author: Ran junlin
+ * @Date: 2023-05-09 23:18:38
+ * @LastEditTime: 2023-05-14 00:38:15
+ * @LastEditors: Ran junlin
+-->
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +75,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### 发布流程
+先 `npm run build-com` 打包，然后`npm publish`

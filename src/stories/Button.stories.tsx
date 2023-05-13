@@ -2,12 +2,12 @@
  * @Description:
  * @Author: Ran junlin
  * @Date: 2023-05-08 16:34:45
- * @LastEditTime: 2023-05-09 14:45:23
+ * @LastEditTime: 2023-05-14 00:46:00
  * @LastEditors: Ran junlin
  */
 import React, { useEffect, useState } from 'react';
 import Button from '../components/Button';
-import { ButtonType } from '../components/Button';
+import { EButtonType } from '../components/Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
@@ -23,28 +23,28 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary = {
   args: {
-    btnType: ButtonType.Primary,
+    btnType: EButtonType.Primary,
     children: 'Primary',
   },
 };
 
 export const Default = {
   args: {
-    btnType: ButtonType.Default,
+    btnType: EButtonType.Default,
     children: 'Default',
   },
 };
 
 export const Danger = {
   args: {
-    btnType: ButtonType.Danger,
+    btnType: EButtonType.Danger,
     children: 'Danger',
   },
 };
 
 export const Link = {
   args: {
-    btnType: ButtonType.Link,
+    btnType: EButtonType.Link,
     children: 'Link',
     target: '_blank',
   },

@@ -2,7 +2,7 @@
  * @Description:
  * @Author: Ran junlin
  * @Date: 2023-04-27 08:56:36
- * @LastEditTime: 2023-05-07 14:14:13
+ * @LastEditTime: 2023-05-14 00:36:11
  * @LastEditors: Ran junlin
  */
 
@@ -16,6 +16,7 @@ import SubMenu from './components/Menu/SubMenu';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import './App.css';
 import Icon from './components/Icon';
+import Upload from './components/Upload';
 import { LoremIpsum } from './components/LoremIpsum/LoremIpsum';
 
 library.add(fas); //全部引入icon
@@ -42,19 +43,19 @@ export default function App() {
           <Icon icon="coffee" theme="dark"></Icon>
         </Button>
 
-        <Button autoFocus btnType={ButtonType.Primary}>
+        <Button autoFocus btnType="primary" >
           Primary
           <Icon icon="i-cursor" theme="primary"></Icon>
         </Button>
-        <Button btnType={ButtonType.Danger} size={ButtonSize.large}>
+        <Button btnType="danger" size={ButtonSize.Large}>
           Danger
         </Button>
-        <Button btnType={ButtonType.Danger} size={ButtonSize.large} disabled>
+        <Button btnType="default" size={ButtonSize.Small} disabled>
           Danger
         </Button>
         <Button
-          btnType={ButtonType.Link}
-          size={ButtonSize.large}
+          btnType="link"
+          size={ButtonSize.Large}
           href="https://react.docschina.org/learn"
           target="_blank"
         >
@@ -87,6 +88,11 @@ export default function App() {
             </MenuItem>
           </SubMenu>
         </Menu>
+        <hr />
+        <Upload action="https://www.mocky.io/v2/5cc8019d300000980a055e76" drag>
+          <Icon icon="upload" size="5x" theme="secondary" />
+          <p>Drag file over to here</p>
+        </Upload>
       </div>
     </>
   );

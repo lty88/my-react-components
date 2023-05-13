@@ -2,18 +2,19 @@
  * @Description:
  * @Author: Ran junlin
  * @Date: 2023-04-27 11:50:02
- * @LastEditTime: 2023-05-08 16:51:28
+ * @LastEditTime: 2023-05-14 00:43:26
  * @LastEditors: Ran junlin
  */
 import React from 'react';
 import classNames from 'classnames';
-// import './_style.scss';
 export enum ButtonSize {
-  large = 'large',
-  small = 'small',
+  Large = 'large',
+  Small = 'small',
 }
 
-export enum ButtonType {
+export type ButtonType = 'primary' | 'default' | 'danger' | 'link';
+
+export enum EButtonType {
   Primary = 'primary',
   Default = 'default',
   Danger = 'danger',
@@ -46,9 +47,9 @@ const Button: React.FC<ButtonProps> = ({
   const classes = classNames('btn', {
     [`btn-${btnType}`]: btnType,
     [`btn-${size}`]: size,
-    disabled: btnType === ButtonType.Link && disabled,
+    disabled: btnType === EButtonType.Link && disabled,
   });
-  if (btnType === ButtonType.Link && restProps.href) {
+  if (btnType === EButtonType.Link && restProps.href) {
     return (
       <a className={classes} {...restProps}>
         {children}
@@ -64,7 +65,7 @@ const Button: React.FC<ButtonProps> = ({
 };
 Button.defaultProps = {
   disabled: false, // default disabled state is false.  true by default.  useful for'submit' button.  probably want something like this for '
-  btnType: ButtonType.Primary,
+  btnType: EButtonType.Primary,
 };
 
 export default Button;

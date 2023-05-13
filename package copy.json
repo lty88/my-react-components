@@ -1,39 +1,42 @@
 {
-  "name": "code-sun",
-  "version": "1.2.2",
+  "name": "codeSun",
+  "version": "0.1.0",
   "private": false,
   "description": "CodeSun React component library",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "type": "dist/index.d.ts",
   "license": "MIT",
-  "author": {
-    "name": "code-sun",
-    "email": "98n9@163.com"
-  },
   "keywords": {
     "react": "React",
     "react-dom": "ReactDOM",
+    "react-scripts": "react-scripts",
     "storybook": "Storybook",
     "storybook-react": "StorybookReact",
     "typescript": "typescript",
     "typescript-react": "typescript-react"
   },
   "files": [
-    "dist"
+    "build"
   ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/classnames": "^2.3.1",
+    "@types/react-transition-group": "^4.2.3",
     "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "framer-motion": "^10.12.8",
+    "node-sass": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.62.1",
     "web-vitals": "^2.1.4"
-  },
-  "peerDependencies":{
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -88,16 +91,6 @@
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.9",
-    "webpack": "^5.82.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/classnames": "^2.3.1",
-    "@types/react-transition-group": "^4.2.3",
-    "node-sass": "^7.0.3",
-    "sass": "^1.62.1"
+    "webpack": "^5.82.0"
   }
 }
