@@ -79,3 +79,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### 发布流程
 先 `npm run build-com` 打包，然后`npm publish`
+
+### 发布注意（pack.json）
+不是账号密码错误 (请检查npm官网的账号密码)
+不是包重名 (请检查npm官网上是否有同名项目，名字取决于 package.js 的项目名字段)
+不是网络原因
+也不是镜像源问题
