@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Ran junlin
  * @Date: 2023-05-09 23:18:38
- * @LastEditTime: 2023-05-14 00:38:15
+ * @LastEditTime: 2023-05-14 15:17:48
  * @LastEditors: Ran junlin
 -->
 # Getting Started with Create React App
@@ -81,7 +81,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 先 `npm run build-com` 打包，然后`npm publish`
 
 ### 发布注意（pack.json）
+发包前先打包
 不是账号密码错误 (请检查npm官网的账号密码)
-不是包重名 (请检查npm官网上是否有同名项目，名字取决于 package.js 的项目名字段)
-不是网络原因
-也不是镜像源问题
+不是包重名 (请检查npm官网上是否有同名项目，每次发布修改版本)
+不是网络原因 可能需要梯子
+切换官方镜像源
+
+### npm config set registry https://registry.npm.taobao.org
+### npm config set registry https://registry.npmjs.org

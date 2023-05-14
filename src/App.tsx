@@ -2,12 +2,12 @@
  * @Description:
  * @Author: Ran junlin
  * @Date: 2023-04-27 08:56:36
- * @LastEditTime: 2023-05-14 00:36:11
+ * @LastEditTime: 2023-05-14 15:27:45
  * @LastEditors: Ran junlin
  */
 
-import React, { useRef } from 'react';
-import Button, { ButtonType, ButtonSize } from './components/Button';
+import React from 'react';
+import Button, { ButtonSize } from './components/Button';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import Menu from './components/Menu/Menu';
@@ -17,7 +17,6 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import './App.css';
 import Icon from './components/Icon';
 import Upload from './components/Upload';
-import { LoremIpsum } from './components/LoremIpsum/LoremIpsum';
 
 library.add(fas); //全部引入icon
 export default function App() {
@@ -43,7 +42,7 @@ export default function App() {
           <Icon icon="coffee" theme="dark"></Icon>
         </Button>
 
-        <Button autoFocus btnType="primary" >
+        <Button autoFocus btnType="primary">
           Primary
           <Icon icon="i-cursor" theme="primary"></Icon>
         </Button>
